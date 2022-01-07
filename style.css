@@ -1,0 +1,65 @@
+body{
+    background: url("Moustache_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+span{
+    display: inline-block;
+}
+#emoji{
+    height: 50px;
+    width: 50px;
+}
+#emoji1{
+    height: 40px;
+    width: 60px;
+    margin-left: 5px;
+    margin-right: 15px;
+}
+#circle{
+    width:30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: aquamarine;
+    box-shadow: aquamarine 0px 0px 10px 2px;
+    border: aquamarine 2px solid;
+    margin-bottom: -10;
+
+}
+#circle1{
+    width:30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: red;
+    box-shadow: red 0px 0px 10px 2px;
+    border: red 2px solid;
+    margin-bottom: -10;
+
+}
+#chosser{
+    border: gray 2px solid;
+    background-color: rgb(252, 252, 252);
+    border-radius: 30px;
+    margin-top: 50px;
+    padding: 20px;
+    width:fit-content;
+}
+.btn-success:hover{
+    background-color: white;
+    color: black;
+    border: lime 3px solid;
+}
+canvas{
+    animation-name: ex;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes ex {
+    from {
+        box-shadow: 1px 1px 38px red;
+    }
+
+    to {
+        box-shadow: 1px 1px 38px rgb(0, 255, 213);
+    }
+}

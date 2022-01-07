@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>Lipstic and Moustache filter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+</head>
+
+<body id="main">
+    <center>
+        <h3 class="btn btn-info" style="height: 60px; width: 300px; font-size: 30px;">Realtime Filter</h3>
+        <br>
+        <br>
+        <button onclick="snapshot()" class="btn btn-success"
+            style="height: 40px; width: 200px; font-size: 20px; border-radius: 20px;">Take Snapshot</button>
+        <br>
+        <div id="chosser">
+            <span class="btn" onclick="moustache_btn()"> 
+                <span>
+                    <div id="circle"></div>
+                </span>
+                <span>
+                    <img id="emoji" class="circle" src="mousetache_emoji.png">
+                </span>
+                <span>
+                    <p>Moustache</p>
+                </span>
+            </span>
+
+            <hr>
+
+            <span class="btn" onclick="lipstic_btn()">
+                <span>
+                    <div id="circle1"></div>
+                </span>
+                <span>
+                    <img id="emoji1" class="circle" src="Lipstic.png">
+                </span>
+                <span>
+                    <p>Lipstic</p>
+                </span>
+            </span>
+        </div>
+
+    </center>
+    <script src="main.js"></script>
+</body>
+
+</html>
